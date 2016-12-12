@@ -1,0 +1,25 @@
+{
+  "name": "fis3-parser-swig-lesstheme",
+  "version": "1.0.0",
+  "description": "自动按照条件生成theme判断",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jguang/fis3-parser-swig-lesstheme.git"
+  },
+  "keywords": [
+    "fis",
+    "fis3",
+    "swig",
+    "theme"
+  ],
+  "author": "jguang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jguang/fis3-parser-swig-lesstheme/issues"
+  },
+  "homepage": "https://github.com/jguang/fis3-parser-swig-lesstheme#readme"
+}
