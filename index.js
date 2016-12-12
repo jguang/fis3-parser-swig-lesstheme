@@ -26,8 +26,9 @@ module.exports = function (content, file, opt) {
             var styleMatchs = styleContent.match(/\@import\s+[\"\'](.*?@{theme}.*?)[\"\']/i);
             var styleThemeMatch = styleContent.match(/\@theme\s*\:\s*(.*?)(\;)/i);
             var configInfo = fis.project.lookup(styleMatchs[1].replace('@{theme}', styleThemeMatch[1]) + '.less', styleFile);
+            var regTheme = new RegExp(styleMatchs[1].split('\/').pop().replace('@{theme}', '(.*?)') + '.less', 'i');
             var configFiles = fs.readdirSync(configInfo.file.dirname).filter(function (f) {
-                var nFile = f.match(/([\d]+)\_config\.less$/i);
+                var nFile = f.match(regTheme);
                 if (nFile) {
                     opt.theme.push(nFile[1])
                 }
