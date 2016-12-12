@@ -1,6 +1,6 @@
 {
   "name": "fis3-parser-swig-lesstheme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "自动按照条件生成theme判断",
   "main": "index.js",
   "scripts": {
